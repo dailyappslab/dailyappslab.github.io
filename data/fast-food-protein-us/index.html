@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fast-food protein and calories, US menus (open dataset, 259 items)</title>
+<meta name="description" content="Protein and calories for 259 menu items at McDonald's, Burger King, Subway, Starbucks and Chipotle, from each chain's own nutrition data. Free CSV, CC BY 4.0.">
+<link rel="canonical" href="https://dailyappslab.github.io/data/fast-food-protein-us/">
+<link rel="stylesheet" href="../../style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset",
+"name":"Fast-food protein and calories, US menus",
+"description":"Protein, calories and other nutrition values for 259 menu items at McDonald's, Burger King, Subway, Starbucks and Chipotle in the US, copied from each chain's own published nutrition data, with the date each value was read and a protein-per-100-calories column.",
+"url":"https://dailyappslab.github.io/data/fast-food-protein-us/",
+"sameAs":"https://github.com/dailyappslab/fast-food-protein-us",
+"isBasedOn":["https://www.mcdonalds.com/us/en-us/about-our-food/nutrition-calculator.html","https://www.bk.com/nutrition-explorer","https://media.subway.com/dam/urn:aaid:aem:f20a4541-8c88-496b-940d-4aa8318cae26/original/as/us-nutrition-en.pdf","https://www.starbucks.com/menu/drinks/protein-beverages","https://www.chipotle.com/nutrition-calculator/burrito-bowl"],
+"keywords":["nutrition","protein","calories","fast food","restaurant menus","McDonald's","Burger King","Subway","Starbucks","Chipotle"],
+"license":"https://creativecommons.org/licenses/by/4.0/",
+"isAccessibleForFree":true,
+"version":"1.0.0",
+"datePublished":"2026-11-18",
+"temporalCoverage":"2026-10-17/2026-10-22",
+"spatialCoverage":{"@type":"Place","name":"United States"},
+"variableMeasured":["calories","protein_g","protein_g_per_100_kcal","carbs_g","fat_g","sodium_mg","sugars_g","caffeine_mg"],
+"creator":{"@type":"Person","name":"Javed Iqbal","url":"https://health.dailyappslab.com/about/","affiliation":{"@type":"Organization","name":"Daily Apps Lab","url":"https://dailyappslab.com/"}},
+"publisher":{"@type":"Organization","name":"Daily Apps Lab","url":"https://dailyappslab.com/"},
+"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://dailyappslab.github.io/data/fast-food-protein-us/fast-food-protein-us.csv"}]}
+</script>
+</head>
+<body>
+<main>
+<p class="k">Open data · CC BY 4.0</p>
+<h1>Fast-food protein and calories, US menus</h1>
+<p>259 menu items at McDonald's, Burger King, Subway, Starbucks and Chipotle, with calories and protein for every row and carbs, fat, sodium, sugars or caffeine where the chain publishes them. Every number was copied from the chain's own US nutrition page, and each row says the date it was read (17 to 22 October 2026).</p>
+<p><a href="fast-food-protein-us.csv">Download the CSV</a> · <a href="https://github.com/dailyappslab/fast-food-protein-us">Repository and column notes</a> · <a href="https://health.dailyappslab.com/macroscout/protein-finder/">Filter it in the Protein Finder</a></p>
+
+<h2>The leanest high-protein orders</h2>
+<p>Items with at least 25 g of protein and no more than 500 calories, not counting drinks, sorted by protein per 100 calories. 24 items in the file meet that bar; these are the first 15.</p>
+<div class="wrap"><table>
+<thead><tr><th>Chain</th><th>Item</th><th>Calories</th><th>Protein (g)</th><th>Protein per 100 cal</th></tr></thead>
+<tbody>
+<tr><td>Chipotle</td><td>Chicken bowl, simple and light (our build)</td><td>230</td><td>33</td><td>14.3</td></tr>
+<tr><td>Chipotle</td><td>Chicken bowl with black beans (our build)</td><td>360</td><td>41</td><td>11.4</td></tr>
+<tr><td>Subway</td><td>Subway Club Protein Bowl</td><td>410</td><td>45</td><td>11</td></tr>
+<tr><td>Subway</td><td>Buffalo Chicken Protein Bowl</td><td>380</td><td>35</td><td>9.2</td></tr>
+<tr><td>Subway</td><td>Sweet Onion Chicken Teriyaki Protein Bowl</td><td>470</td><td>42</td><td>8.9</td></tr>
+<tr><td>Subway</td><td>Fresh Fit Grilled Chicken, 6-inch</td><td>300</td><td>26</td><td>8.7</td></tr>
+<tr><td>Burger King</td><td>Flame-Grilled Chicken Sandwich</td><td>410</td><td>35</td><td>8.5</td></tr>
+<tr><td>Subway</td><td>Fresh Fit Roast Beef, 6-inch</td><td>300</td><td>25</td><td>8.3</td></tr>
+<tr><td>McDonald&#x27;s</td><td>McCrispy Strips (3 piece)</td><td>400</td><td>31</td><td>7.8</td></tr>
+<tr><td>Chipotle</td><td>High Protein-Low Calorie Bowl</td><td>460</td><td>35</td><td>7.6</td></tr>
+<tr><td>Subway</td><td>Sweet Onion Chicken Teriyaki, 6-inch</td><td>430</td><td>29</td><td>6.7</td></tr>
+<tr><td>Subway</td><td>Honey Mustard Chicken, 6-inch</td><td>480</td><td>30</td><td>6.3</td></tr>
+<tr><td>Subway</td><td>Buffalo Chicken, 6-inch</td><td>460</td><td>29</td><td>6.3</td></tr>
+<tr><td>Subway</td><td>Subway Club, 6-inch</td><td>500</td><td>31</td><td>6.2</td></tr>
+<tr><td>Subway</td><td>Chipotle Philly, 6-inch</td><td>490</td><td>30</td><td>6.1</td></tr>
+</tbody></table></div>
+<p>Chipotle rows marked "our build" are bowls added up from Chipotle's own ingredient values; the CSV lists the ingredients. Subway footlong rows in the file are Subway's 6-inch values doubled, as Subway says to work them out.</p>
+
+<h2>Use and credit</h2>
+<p>The nutrition numbers are facts published by the chains. The compilation and the protein-per-100-calories column are free to reuse under CC BY 4.0. Please credit "MacroScout by Daily Apps Lab" and link the <a href="https://health.dailyappslab.com/macroscout/protein-finder/">Protein Finder</a>. Menus change, so check the chain's page before relying on a value. Nothing here is medical or dietary advice.</p>
+<p>Ranked guides for each chain: <a href="https://health.dailyappslab.com/macroscout/mcdonalds-high-protein/">McDonald's</a>, <a href="https://health.dailyappslab.com/macroscout/burger-king-high-protein/">Burger King</a>, <a href="https://health.dailyappslab.com/macroscout/subway-high-protein/">Subway</a>, <a href="https://health.dailyappslab.com/macroscout/starbucks-protein-drinks/">Starbucks</a>, and <a href="https://health.dailyappslab.com/macroscout/high-protein-fast-food/">all five under 500 calories</a>.</p>
+
+<footer>Published by Javed Iqbal at <a href="https://dailyappslab.com/">Daily Apps Lab</a> · <a href="../../">All apps and data</a></footer>
+</main>
+</body>
+</html>
